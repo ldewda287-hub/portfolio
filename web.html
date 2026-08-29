@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style & Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+     <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Poppins',sans-serif;color:#fff;background:#111}
+
+    .hero{
+      position:relative;
+      height:100vh;
+      background:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1974&auto=format&fit=crop') center/cover no-repeat;
+      display:flex;
+    }
+
+    .overlay{
+      position:absolute;inset:0;
+      background:rgba(0,0,0,.55);
+    }
+
+    .container{
+      position:relative;
+      width:100%;
+      display:flex;
+    }
+    /* New Top Navbar */
+    .navbar{
+      position:absolute;
+      top:0;left:0;right:0;
+      height:64px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 40px 0 120px;
+      background:rgba(0,0,0,.45);
+      backdrop-filter: blur(6px);
+      border-bottom:1px solid rgba(255,255,255,.15);
+      z-index:5;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:28px;
+      font-size:14px;
+      letter-spacing:.5px;
+    }
+
+    .nav-links a{
+      color:#fff;
+      text-decoration:none;
+      opacity:.85;
+    }
+
+    .nav-links a:hover{opacity:1}
+
+    .nav-right{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      font-size:13px;
+    }
+
+    .nav-btn{
+      border:1px solid #fff;
+      padding:8px 14px;
+    }
+
+
+    /* Left Vertical Menu */
+    .side-nav{
+      width:90px;
+      border-right:1px solid rgba(255,255,255,.15);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:space-between;
+      padding:20px 0;
+      background:rgba(0,0,0,.35);
+      backdrop-filter: blur(6px);
+    }
+
+    .logo{
+      width:48px;height:48px;border:2px solid #fff;
+      display:grid;place-items:center;font-weight:700
+    }
+
+    .menu-letters{
+      display:flex;flex-direction:column;gap:28px;
+      font-weight:600;letter-spacing:6px;opacity:.85
+    }
+
+    .menu-letters span{text-orientation:mixed}
+
+    /* Main Content */
+    .main{
+      flex:1;
+      display:flex;
+      align-items:center;
+      padding:0 6vw;
+    }
+
+    .headline{
+      max-width:560px;
+    }
+
+    .headline h1{
+      font-size:clamp(42px,6vw,86px);
+      line-height:1.05;
+      margin-bottom:20px;
+    }
+
+    .headline p{
+      color:#ddd;margin-bottom:28px;font-size:18px
+    }
+/* 
+    .buttons{display:flex;gap:14px
+    border: 1px solid #fff;
+    padding: 12px 18px;
+    background: transparent;
+    color: #0e872f;
+    cursor: pointer;
+    font-weight: 600;
+    border: 2px solid #0e872f;} */
+
+      .btn{
+        width: auto;
+      }
+    .btn.primary{
+      background:#fff;color:#111
+      
+    }
+
+    /* Right Services Panel */
+
+   .all-Swecice {
+    padding: 10PX;
+   }
+
+
+
+
+    .services{
+   width:420px;
+  height: 550px;              /* your required height */
+  margin-top: 200px;  
+  overflow-y:auto;
+  scroll-snap-type: y mandatory;
+  
+  border-left:1px solid rgba(255,255,255,.15);
+  padding:120px 40px 40px;
+  display:flex;
+  flex-direction:column;
+  gap:36px;
+  background:rgba(0,0,0,.35);
+  backdrop-filter: blur(6px);
+    scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; /* smooth slide */
+
+    /* Hide scrollbar (all browsers) */
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE/Edge */
+    }
+
+    .service-card{
+      padding: 15px;
+      height: 530px;
+    }
+
+
+
+
+
+    .services.dragging{
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.service {
+ 
+  border: 0.1px solid rgba(255, 255, 255, .2);
+  padding: 22px;
+  border-radius: 15px;
+  animation: blinkBorder 2s infinite;
+   scroll-snap-align: start;
+       margin: 10px;
+ 
+}
+
+@keyframes blinkBorder {
+  0%, 100% { border-color: rgba(255, 255, 255, .2); }
+  50% { border-color: transparent; }
+}
+    
+      
+    .service:hover {
+  background-color: none;
+  color: white  ;
+  
+  border: 5px solid gray;
+}
+
+    .service h3{
+      font-size:20px;margin-bottom:6px
+    }
+
+    .service p{
+      font-size:14px;color:#ccc
+    }
+
+    .contact{
+      border:1px solid rgba(255,255,255,.35);
+      padding:22px;margin-top:auto
+    }
+
+    .contact strong{display:block;margin-bottom:6px}
+
+    /* Top Right */
+    .topbar{
+      position:absolute;top:18px;right:24px;
+      display:flex;gap:14px;align-items:center
+    }
+
+    .buy{
+      border:1px solid #fff;padding:8px 14px;font-size:12px
+    }
+
+    .socials{display:flex;flex-direction:column;gap:12px;margin-left:8px}
+
+    .socials div{
+      width:34px;height:34px;border:1px solid #fff;
+      display:grid;place-items:center;font-size:12px
+    }
+
+    @media(max-width:1100px){
+      .services{display:none}
+    }
+    .container{ 
+      margin-top: 50px;
+    }
+    .services::-webkit-scrollbar {
+  width: 8px;
+}
+.services::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.3);
+  border-radius: 10px;
+}
+
+ 
+
+   </style>
+</head>
+<body>
+  <section class="hero">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid" >
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Contect Us</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <!-- --><nav class="navbar">
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="nav-right">
+        <span>Call: +0 12 345 678</span>
+        <div class="nav-btn">Get Quote</div>
+      </div>
+    </nav> 
+
+
+
+    
+    <div class="overlay"></div>
+
+    <!-- <div class="topbar">
+      <div class="buy">BUY NOW</div>
+      <div class="socials">
+        <div>f</div>
+        <div>t</div>
+        <div>ig</div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <aside class="side-nav">
+        <div class="logo">+</div>
+        <div class="menu-letters">
+          <span>H</span>
+          <span>A</span>
+          <span>W</span>
+          <span>C</span>
+        </div>
+        <div style="opacity:.6;font-size:12px">Home</div>
+      </aside>
+
+      <main class="main">
+        <div class="headline">
+          <h1>Common - <br/>Design.</h1>
+          <p>We are the best home designer in town.</p>
+          <div class="buttons">
+            <button class="btn primary">Call</button>
+            <button class="btn">About</button>
+          </div>
+        </div>
+      </main>
+
+
+<!-- Service Pellet -->
+ 
+ <div class="all-Swecice">
+      <aside class="services">
+                 <div class="service-card">
+        <div class="service">
+          <h3>Architecture</h3>
+          <p>Rural and City Architecture</p>
+        </div>
+        <div class="service">
+          <h3>Home Design</h3>
+          <p>Interior Design, Home Decor, Potager</p>
+        </div>
+          <div class="service">
+          <h3>Home Design</h3>
+          <p>Interior Design, Home Decor, Potager</p>
+        </div>
+          <div class="service">
+          <h3>Home Design</h3>
+          <p>Interior Design, Home Decor, Potager</p>
+        </div>
+          <div class="service">
+          <h3>Home Design</h3>
+          <p>Interior Design, Home Decor, Potager</p>
+        </div>
+        <div class="service">
+          <h3>Plumbing</h3>
+          <p>Electricity, Plumbing, and so on.</p>
+        </div>
+        <div class="service">
+          <h3>Plumbing</h3>
+          <p>Electricity, Plumbing, and so on.</p>
+        </div>
+        <div class="service">
+          <h3>Plumbing</h3>
+          <p>Electricity, Plumbing, and so on.</p>
+        </div>
+
+        </div>
+</div> 
+
+
+  <!-- Vertical Slider   -->
+
+
+ 
+
+
+        <div class="contact">
+          <strong>Have a project?</strong>
+          <span>Phone us: +0 12 345 678</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Vertical Slider Script  -->
+
+<script>
+const slider = document.querySelector('.services');
+const cards = document.querySelectorAll('.service');
+
+let isDown = false;
+let startY;
+let startScrollTop;
+
+// Mouse Down
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('dragging');
+  startY = e.pageY;
+  startScrollTop = slider.scrollTop;
+});
+
+// Mouse Move
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const walk = e.pageY - startY;
+  slider.scrollTop = startScrollTop - walk;
+});
+
+// Mouse Up / Leave
+function stopDrag(){
+  isDown = false;
+  slider.classList.remove('dragging');
+  snapToNearest();
+}
+slider.addEventListener('mouseup', stopDrag);
+slider.addEventListener('mouseleave', stopDrag);
+
+// Snap to nearest card
+function snapToNearest(){
+  const gap = 36; // same as your flex gap
+  const cardHeight = cards[0].offsetHeight + gap;
+  const index = Math.round(slider.scrollTop / cardHeight);
+  slider.scrollTo({ top: index * cardHeight, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

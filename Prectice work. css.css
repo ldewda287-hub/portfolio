@@ -1,0 +1,43 @@
+/* SLIDER CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.smooth-slider{
+    width: 100%;
+    height: 840px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track{
+    display: flex;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.slide{
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.smooth-slider{
+    height: 450px;
+}
+
+}
