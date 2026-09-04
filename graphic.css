@@ -1635,6 +1635,7 @@ font-size:28px;
 
     .ds-wrapper{
         flex-direction:column;
+        text-align: center;
     }
 
     
@@ -1655,6 +1656,17 @@ font-size:28px;
 
     .ds-trust-section{
         padding:80px 20px;
+    }
+
+    .ds-section-tag{
+            display: inline-grid;
+            align-items: center;
+        gap: 15px;
+        /* color: #d6b06a; */
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    
     }
 
    
@@ -2585,7 +2597,7 @@ body {
 
 .gd-stats-section{ 
   background-color: #062621;
-  padding-bottom: 50px;
+  padding: 20px;
 }
 
 .gd-stats-container {
@@ -2639,8 +2651,11 @@ body {
 /* RESPONSIVE */
 @media(max-width: 768px) {
   .gd-stats-container {
-    flex-direction: column;
-    align-items: center;
+            flex-direction: column;
+        align-items: center;
+        margin: 22px;
+        padding: 61px;
+        gap: 20px;
   }
 
   .gd-stat-box {
@@ -4407,4 +4422,373 @@ body.lk-video-popup-open{
 
     }
 
+}
+
+/* =========================================================================
+   ADDED RESPONSIVE RULES — TABLET & MOBILE ONLY
+   Desktop layout, colors, sections and existing styling are untouched.
+   These media queries only adjust layout/sizing for smaller screens.
+========================================================================= */
+
+/* -------------------------------------------------------------------
+   HERO / TOP LAYOUT  (.containerfuid-2, .main-box, #call-1, #call-2, #call-3)
+------------------------------------------------------------------- */
+@media (max-width:1024px){
+
+    .containerfuid-2{
+        flex-direction: column;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .main-box{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #call-1{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin-top: 20px;
+    }
+
+    .sidebar{
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .sidebar a{
+        display: inline-block;
+        padding: 10px 12px;
+    }
+
+    #call-2{
+        width: 100%;
+        height: 500px;
+    }
+
+    #call-3{
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .service-card{
+        height: auto;
+    }
+
+    .services{
+        height: auto;
+        max-height: 480px;
+    }
+
+    .contact{
+        width: 100%;
+        max-width: 320px;
+        margin: 20px auto;
+        right: auto;
+    }
+}
+
+@media (max-width:600px){
+
+    .containerfuid-2{
+        margin-top: 55px;
+    }
+
+    #call-1{
+        justify-content: center;
+        padding-right: 15px;
+        display: none;  
+    }
+
+    .logo{
+        margin-top: 15px;
+        width:60px;
+        height:60px;
+    }
+
+    .Home-1{
+        font-size:20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar a{
+        display: block;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #call-2{
+        height: 320px;
+    }
+
+    #call-3{
+        padding: 20px 12px;
+        display: none;
+    }
+
+    .service-card{
+        height: auto;
+    }
+
+    .service{
+        padding: 18px 15px 10px 15px;
+        margin: 8px 0;
+    }
+
+    .contact{
+        width: 100%;
+        max-width: 100%;
+        margin: 15px auto;
+        padding: 18px;
+    }
+}
+
+/* -------------------------------------------------------------------
+   TOP NAVBAR  (.navbar, .nav-links, .nav-right, .nav-btn)
+------------------------------------------------------------------- */
+@media (max-width:1024px){
+
+    .navbar{
+        padding: 0 20px 0 20px;
+    }
+
+    .nav-links{
+        gap: 16px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:600px){
+
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        font-size: 12px;
+    }
+
+    .nav-right{
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    .nav-btn{
+        padding: 6px 10px;
+    }
+}
+
+/* -------------------------------------------------------------------
+   WHO WE ARE  (.container-1, .image-box, .content-box, .features)
+------------------------------------------------------------------- */
+@media (max-width:1024px){
+
+    .container-1{
+        flex-direction: column;
+        margin: 0px 40px;
+        gap: 30px;
+    }
+
+    .image-box img{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px){
+
+    .who-we-are{
+        padding: 40px 0%;
+    }
+
+    .container-1{
+        margin: 0px 20px;
+        gap: 20px;
+    }
+
+    .content-box h2{
+        font-size: 28px;
+    }
+
+    .content-box p{
+        font-size: 15px;
+    }
+}
+
+/* -------------------------------------------------------------------
+   SOCIAL ICON WRAPPER  (.wrapper)
+------------------------------------------------------------------- */
+@media (max-width:600px){
+
+    .wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .wrapper .icon{
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+        margin: 6px;
+    }
+}
+
+/* -------------------------------------------------------------------
+   CTA SECTION  (.clz-health-section / .clz-health-card)
+------------------------------------------------------------------- */
+@media (max-width:1024px){
+
+    .clz-health-card{
+        width: 88%;
+        padding: 40px 25px;
+        top: -220px;
+    }
+
+    .clz-title{
+        font-size: 38px;
+    }
+
+    .clz-description{
+        width: 85%;
+    }
+}
+
+@media (max-width:600px){
+
+    .clz-health-card{
+        width: 92%;
+        padding: 30px 18px;
+        top: -170px;
+        border-radius: 20px;
+    }
+
+    .clz-title{
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .clz-description{
+        width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .clz-btn-group{
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .clz-btn-primary{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* -------------------------------------------------------------------
+   FOOTER  (.clz-footer / .clz-footer-wrapper)
+------------------------------------------------------------------- */
+@media (max-width:1024px){
+
+    .clz-footer{
+        padding: 220px 30px 40px 30px;
+        border-radius: 120px 120px 0 0;
+    }
+
+    .clz-footer-wrapper{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width:600px){
+
+    .clz-footer{
+        padding: 190px 20px 30px 20px;
+        border-radius: 60px 60px 0 0;
+    }
+
+    .clz-footer-wrapper{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .clz-social-icons a{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* -------------------------------------------------------------------
+   BRAND LOGO SLIDER  (.ds-brand-heading / .ds-brand-item)
+------------------------------------------------------------------- */
+@media (max-width:1024px){
+
+    .ds-brand-heading{
+        font-size: 36px;
+    }
+
+    .ds-brand-item{
+        width: 170px;
+        height: 95px;
+    }
+}
+
+@media (max-width:600px){
+
+    .ds-brand-heading{
+        font-size: 26px;
+        padding: 20px 15px;
+    }
+
+    .ds-brand-item{
+        width: 130px;
+        height: 75px;
+        border-radius: 12px;
+    }
+
+    .ds-brand-track{
+        gap: 18px;
+    }
+}
+
+/* -------------------------------------------------------------------
+   GLOBAL HEADING SCALE  (generic h1/h2, tablet & mobile only)
+------------------------------------------------------------------- */
+@media (max-width:1024px){
+
+    h2{
+        font-size: 42px;
+    }
+}
+
+@media (max-width:600px){
+
+    h2{
+        font-size: 30px;
+    }
 }
