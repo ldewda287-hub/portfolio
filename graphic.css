@@ -2114,6 +2114,7 @@ font-size:28px;
     .faq-grid{
 
         grid-template-columns:1fr;
+               gap: 22px;
 
     }
 
@@ -2124,7 +2125,7 @@ font-size:28px;
 
     .faq-section{
 
-        padding:30px 20px;
+        padding: 30px 20px 187px 20px;
 
     }
 
