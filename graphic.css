@@ -4448,13 +4448,7 @@ body.lk-video-popup-open{
     }
 
     #call-1{
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-left: 15px;
-        padding-right: 15px;
-        justify-content: space-between;
+        display: none;
     }
 
     .logo{
@@ -4610,6 +4604,7 @@ body.lk-video-popup-open{
         flex-direction: column;
         margin: 0px 40px;
         gap: 30px;
+        text-align: center;
     }
 
     .image-box img{
