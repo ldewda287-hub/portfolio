@@ -4373,6 +4373,18 @@ body {
 
 }
 
+/* Copyright Footer */
+.gd-copyright {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+
+.gd-copyright p {
+    margin: 0;
+    color: #000000;
+}
 
 /* =========================================================
    PREVENT BACKGROUND SCROLL
@@ -4789,3 +4801,5 @@ body.lk-video-popup-open{
         font-size: 30px;
     }
 }
+
+
