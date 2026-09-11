@@ -3988,13 +3988,13 @@ body {
 
 .lk-drag-card-content{
 
-    height:115px;
+      
 
     padding:
         20px 15px;
 
     background: #e9e6e1
-       
+           margin-top: 40px;
 
 }
 
