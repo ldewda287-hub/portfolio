@@ -3929,43 +3929,22 @@ text-align: center;
 
 .lk-drag-play{
 
-    position:absolute;
-
-    top:50%;
-    left:50%;
-
-    width:54px;
-    height:54px;
-
-    transform:
-        translate(-50%,-50%);
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    border:
-        1px solid
-        rgba(255,255,255,.35);
-
-    border-radius:50%;
-
-    background:
-        rgba(10,10,12,.35);
-
-    backdrop-filter:
-        blur(8px);
-
-    font-size:14px;
-
-    pointer-events:none;
-
-    transition:
-        transform .3s ease,
-        background .3s ease;
-
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 54px;
+    height: 54px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(3 42 37);
+    border-radius: 50%;
+    background: rgb(3 42 37 / 62%);
+    backdrop-filter: blur(8px);
+    font-size: 14px;
+    pointer-events: none;
+    transition: transform .3s ease, background .3s ease;
 }
 
 
@@ -4016,12 +3995,10 @@ text-align: center;
 
 .lk-drag-card-content h3{
 
-    margin:0;
-
-    font-size:16px;
-
-    font-weight:500;
-
+  margin: 10;
+    font-size: 28px;
+    font-weight: 500;
+    color: #032a25;
 }
 
 
@@ -4039,19 +4016,13 @@ text-align: center;
 
 .lk-drag-dot{
 
-    width:24px;
-
-    height:3px;
-
-    margin-top:12px;
-
-    border-radius:10px;
-
-    background:#5038ff;
-
-    box-shadow:
-        0 0 12px
-        rgba(80,56,255,.7);
+   width: 229px;
+    height: 3px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: #032a25;
+    /* box-shadow: 0 0 12px rgba(80, 56, 255, .7); */
+    border-radius: 50%;
 
 }
 
