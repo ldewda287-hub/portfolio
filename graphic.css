@@ -252,7 +252,7 @@ html{
 
 
 
-@media(max-width:450){
+@media (min-width: 200px) and (max-width: 450px){
 
 .main-box {
     margin: 0px;
