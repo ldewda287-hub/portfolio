@@ -248,17 +248,41 @@ html{
 }
 
 /* Images */
-.slide img{
+
+
+
+
+@media(max-width:991px){
+
+    .slide img{
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     display: block;
     /* transition: transform 0.5s ease; */
 }
+   .slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 
+/* Slides */
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
 
+/* Active Slide */
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
 
-
+}
 
 
 
