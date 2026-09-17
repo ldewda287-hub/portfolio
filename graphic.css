@@ -252,7 +252,7 @@ html{
 
 
 
-@media(max-width:991px){
+@media(max-width:450){
 
 .main-box {
     margin: 0px;
@@ -295,6 +295,48 @@ html{
 
 }
 
+@media (min-width: 450px) and (max-width: 995px){
+
+.main-box {
+    margin: 0px;
+    padding: 0%;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+}
+   .slider{
+    width: 100%;
+    height: 225px;
+    position: relative;
+}
+
+/* Slides */
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+   .slide img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    /* transition: transform 0.5s ease; */
+}
+
+/* Active Slide */
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+}
 
 
 
