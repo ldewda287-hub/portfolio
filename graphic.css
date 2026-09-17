@@ -989,7 +989,7 @@ justify-content:center;
 }
 
 .line{
-    width:325px;
+    width:690px;
     height:3px;
     background:#c89b3c;
     margin-bottom:25px;
@@ -1479,7 +1479,7 @@ font-size:28px;
 
 .ds-section-tag::after{
     content:"";
-    width:90px;
+    width:185px;
     height:1px;
     background:#d6b06a;
 }
@@ -2125,7 +2125,7 @@ font-size:28px;
 
     .faq-section{
 
-        padding: 30px 20px 187px 20px;
+        padding: 30px 20px 255px 20px;
 
     }
 
@@ -3629,6 +3629,8 @@ body {
 
     max-width:100%;
 
+    padding-bottom: 35px;
+
     
 
    
@@ -4457,6 +4459,7 @@ body.lk-video-popup-open{
         width: 100%;
         height: auto;
         padding: 20px 15px;
+               display: none;
     }
 
     .service-card{
