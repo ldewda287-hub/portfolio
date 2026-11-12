@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
@@ -1569,51 +1570,58 @@
 
 
 
+<div class="clz-footer-contact">
 
-          <div class="clz-footer-contact">
+    <div class="clenzia-query-wrapper">
 
-            <div class="clenzia-query-wrapper">
+        <div class="clenzia-query-header">
+            <h4 class="clenzia-query-title">
+                Enquiry Section
+            </h4>
+        </div>
 
-    <div class="clenzia-query-header">
-       
-        <h4 class="clenzia-query-title">Enquiry Section</h4>
+        <p class="clenzia-query-desc">
+            Have a question? Send us a message and we’ll get back to you soon.
+        </p>
+
+        <form class="clenzia-query-form" id="contact-form">
+
+            <input
+                type="text"
+                name="name"
+                class="clenzia-query-field"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                class="clenzia-query-field"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                name="message"
+                class="clenzia-query-message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button
+                type="submit"
+                class="clenzia-query-submit"
+                id="submit-btn"
+            >
+                ➤ Send
+            </button>
+
+        </form>
+
     </div>
 
-    <p class="clenzia-query-desc">
-        Have a question? Send us a message and we’ll get back to you soon.
-    </p>
-
-    <form class="clenzia-query-form">
-
-        <input
-            type="text"
-            class="clenzia-query-field"
-            placeholder="Your Name"
-        >
-
-        <input
-            type="email"
-            class="clenzia-query-field"
-            placeholder="Your Email"
-        >
-
-        <textarea
-            class="clenzia-query-message"
-            placeholder="Your Message"
-        ></textarea>
-
-        <button
-            type="submit"
-            class="clenzia-query-submit"
-        >
-            ➤ Send 
-        </button>
-
-    </form>
-
 </div>
-
-        </div>
 
     </div>
 
@@ -3289,6 +3297,68 @@ document.addEventListener(
     }
 );
 
+</script>
+
+
+
+
+<!-- for form script  -->
+
+<script>
+(function () {
+
+    emailjs.init({
+        publicKey: "b37yH82c-hzL8dh1f"
+    });
+
+})();
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("contact-form");
+    const submitBtn = document.getElementById("submit-btn");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        emailjs.sendForm(
+            "service_b6g3w8j",
+            "template_ciba4fn",
+            form
+        )
+
+        .then(function () {
+
+            alert("Thank you! Your message has been sent successfully.");
+
+            form.reset();
+
+        })
+
+        .catch(function (error) {
+
+            console.error("EmailJS Error:", error);
+
+            alert("Message could not be sent. Please try again.");
+
+        })
+
+        .finally(function () {
+
+            submitBtn.disabled = false;
+            submitBtn.textContent = "➤ Send";
+
+        });
+
+    });
+
+});
 </script>
 
 
