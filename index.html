@@ -380,73 +380,78 @@
 
   <!-- main-work-Gallery -->
 
-<div class="main-work-Gallery ">
-  <div class="faq-left-socialmedia">
-    <h2>Work Gallery </h2> </div>
-   <br>  
-    <p >
-      Discover our premium collection of packaging designs, branding concepts, and creative work <br>
-      Every project is thoughtfully crafted to enhance your brand's identity and create a memorable visual experience.
+
+<div class="main-work-Gallery">
+
+    <div class="faq-left-socialmedia">
+        <h2>Work Gallery</h2>
+    </div>
+
+    <br>
+
+    <p>
+        Discover our premium collection of packaging designs, branding concepts, and creative work
+        <br>
+        Every project is thoughtfully crafted to enhance your brand's identity and create a memorable visual experience.
     </p>
 
-  <div class="slider-container">
-   <div class="hover-zone left"></div>
+    <div class="slider-container">
 
-  <div class="slider">
-    <div class="slider-track">
+        <div class="slider">
 
-      <!-- cards -->
-      <div class="card"><img src="https://res.cloudinary.com/dfxox1uu/image/upload/v1786013583/1212_br78mp.png"><p>Luxury</p></div>
-      <div class="card"><img src="galary/1216.png"></div>
-      <div class="card"><img src="galary/1214.png"></div>
-      <div class="card"><img src="galary/1215.png"></div>
+            <div class="slider-track">
 
-      <!-- duplicate for loop -->
-        <div class="card"><img src="galary/1213.png"></div>
-      <div class="card"><img src="galary/1217.png"></div>
-      <div class="card"><img src="galary/1218.png"></div>
-      <div class="card"><img src="galary/1219.png"></div>
-      <div class="card"><img src="galary/1221.png"></div>
+                <!-- Cards -->
+                <div class="card">
+                    <img draggable="false" src="https://res.cloudinary.com/dfxox1uu/image/upload/v1786013583/1212_br78mp.png">
+                    <p>Luxury</p>
+                </div>
 
-        <!-- cards -->
-      <div class="card"><img src="galary/1212.png"></div>
-      <div class="card"><img src="galary/1216.png"></div>
-      <div class="card"><img src="galary/1214.png"></div>
-      <div class="card"><img src="galary/1215.png"></div>
+                <div class="card"><img draggable="false" src="galary/1216.png"></div>
+                <div class="card"><img draggable="false" src="galary/1214.png"></div>
+                <div class="card"><img draggable="false" src="galary/1215.png"></div>
 
-      <!-- duplicate for loop -->
-      <div class="card"><img src="galary/1213.png"></div>
-      <div class="card"><img src="galary/1217.png"></div>
-      <div class="card"><img src="galary/1218.png"></div>
-      <div class="card"><img src="galary/1219.png"></div>
-      <div class="card"><img src="galary/1221.png"></div>
+                <!-- Duplicate Cards -->
+                <div class="card"><img draggable="false" src="galary/1213.png"></div>
+                <div class="card"><img draggable="false" src="galary/1217.png"></div>
+                <div class="card"><img draggable="false" src="galary/1218.png"></div>
+                <div class="card"><img draggable="false" src="galary/1219.png"></div>
+                <div class="card"><img draggable="false" src="galary/1221.png"></div>
 
-      <!-- cards -->
-       <div class="card"><img src="galary/1212.png"></div>
-      <div class="card"><img src="galary/1216.png"></div>
-      <div class="card"><img src="galary/1214.png"></div>
-      <div class="card"><img src="galary/1215.png"></div>
+                <!-- Cards -->
+                <div class="card"><img draggable="false" src="galary/1212.png"></div>
+                <div class="card"><img draggable="false" src="galary/1216.png"></div>
+                <div class="card"><img draggable="false" src="galary/1214.png"></div>
+                <div class="card"><img draggable="false" src="galary/1215.png"></div>
 
-      
+                <!-- Duplicate Cards -->
+                <div class="card"><img draggable="false" src="galary/1213.png"></div>
+                <div class="card"><img draggable="false" src="galary/1217.png"></div>
+                <div class="card"><img draggable="false" src="galary/1218.png"></div>
+                <div class="card"><img draggable="false" src="galary/1219.png"></div>
+                <div class="card"><img draggable="false" src="galary/1221.png"></div>
 
-      <!-- duplicate for loop -->
-      <div class="card"><img src="galary/1213.png"></div>
-      <div class="card"><img src="galary/1217.png"></div>
-      <div class="card"><img src="galary/1218.png"></div>
-      <div class="card"><img src="galary/1219.png"></div>
-      <div class="card"><img src="galary/1221.png"></div>
+                <!-- Cards -->
+                <div class="card"><img draggable="false" src="galary/1212.png"></div>
+                <div class="card"><img draggable="false" src="galary/1216.png"></div>
+                <div class="card"><img draggable="false" src="galary/1214.png"></div>
+                <div class="card"><img draggable="false" src="galary/1215.png"></div>
+
+                <!-- Duplicate Cards -->
+                <div class="card"><img draggable="false" src="galary/1213.png"></div>
+                <div class="card"><img draggable="false" src="galary/1217.png"></div>
+                <div class="card"><img draggable="false" src="galary/1218.png"></div>
+                <div class="card"><img draggable="false" src="galary/1219.png"></div>
+                <div class="card"><img draggable="false" src="galary/1221.png"></div>
+
+            </div>
+
+        </div>
 
     </div>
-  </div>
-  
-
-  <div class="hover-zone right"></div>
 
 </div>
 
-
-
-</div>
 
 
 
@@ -1652,77 +1657,95 @@
 
 
 
-
+<!-- work gallery slider  -->
 
 <script>
-const track = document.querySelector('.slider-track');
-const container = document.querySelector('.slider-container');
+/* =========================================
+   GD GRAPHICS - MOUSE CLICK & DRAG SLIDER
+========================================= */
 
-let position = 0;
-let speed = 0;
+document.querySelectorAll('.slider').forEach((slider) => {
 
-// DRAG
-let isDragging = false;
-let startX = 0;
-let prev = 0;
+    let isDragging = false;
+    let startX = 0;
+    let scrollStart = 0;
+    let hasMoved = false;
 
-// ANIMATION LOOP
-function animate(){
-  if(!isDragging){
-    position += speed;
-  }
-  track.style.transform = `translateX(${position}px)`;
-  requestAnimationFrame(animate);
-}
-animate();
+    // MOUSE CLICK
+    slider.addEventListener('pointerdown', (e) => {
 
-// =======================
-// HOVER AUTO RUN
-// =======================
-container.addEventListener('mousemove', (e)=>{
-  if(isDragging) return;
+        // Only left mouse button
+        if (e.pointerType !== 'mouse' || e.button !== 0) return;
 
-  const rect = container.getBoundingClientRect();
-  const x = e.clientX - rect.left;
+        isDragging = true;
+        hasMoved = false;
 
-  speed = Math.max(Math.min((x - rect.width/2) * 0.008, 2), -2);
+        startX = e.clientX;
+        scrollStart = slider.scrollLeft;
+
+        slider.classList.add('is-dragging');
+
+        slider.setPointerCapture(e.pointerId);
+
+    });
+
+
+    // MOUSE DRAG
+    slider.addEventListener('pointermove', (e) => {
+
+        if (!isDragging) return;
+
+        const distance = e.clientX - startX;
+
+        if (Math.abs(distance) > 4) {
+            hasMoved = true;
+        }
+
+        if (hasMoved) {
+
+            slider.scrollLeft = scrollStart - distance;
+
+        }
+
+    });
+
+
+    // STOP DRAGGING
+    function stopDragging() {
+
+        if (!isDragging) return;
+
+        isDragging = false;
+
+        slider.classList.remove('is-dragging');
+
+    }
+
+
+    slider.addEventListener('pointerup', stopDragging);
+
+    slider.addEventListener('pointercancel', stopDragging);
+
+    slider.addEventListener('lostpointercapture', stopDragging);
+
+
+    // PREVENT IMAGE SELECTION AFTER DRAG
+    slider.addEventListener('click', (e) => {
+
+        if (hasMoved) {
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            hasMoved = false;
+
+        }
+
+    }, true);
+
+
 });
 
-container.addEventListener('mouseleave', ()=>{
-  speed = 0;
-});
-
-// =======================
-// DRAG CONTROL
-// =======================
-track.addEventListener('pointerdown', (e)=>{
-  isDragging = true;
-
-  startX = e.clientX;
-  prev = position;
-  speed = 0;
-
-  track.setPointerCapture(e.pointerId);
-  track.style.cursor = "grabbing";
-});
-
-track.addEventListener('pointermove', (e)=>{
-  if(!isDragging) return;
-
-  let diff = (e.clientX - startX) * 2; // 🔥 balanced speed
-  position = prev + diff;
-});
-
-track.addEventListener('pointerup', (e)=>{
-  isDragging = false;
-  track.releasePointerCapture(e.pointerId);
-
-});
-
-track.addEventListener('pointercancel', ()=>{
-  isDragging = false;
-  track.style.cursor = "grab";
-});
 </script>
 
 
